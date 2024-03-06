@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="DialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/slide_in</item>
+        <item name="android:windowExitAnimation">@anim/slide_out</item>
+    </style>
+
+    <style name="CustomEditText" parent="Widget.AppCompat.EditText">
+        <item name="android:background">@color/white</item>
+        <item name="android:textColor">@color/blue_700</item>
+        <item name="android:fontFamily">@font/montserrat_bold</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="CustomEditLayout" parent="Widget.Material3.TextInputLayout.FilledBox">
+        <item name="android:textColorHint">@color/blue_500</item>
+    </style>
+
+    <style name="CustomTextViewBlue" parent="Widget.AppCompat.TextView">
+        <item name="android:textColor">@color/blue_700</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:fontFamily">@font/montserrat_bold</item>
+    </style>
+
+    <style name="CustomTextViewBlack" parent="CustomTextViewBlue">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="CustomTextViewBlackBig" parent="CustomTextViewBlack">
+        <item name="android:textSize">50sp</item>
+        <item name="android:autoSizeTextType">uniform</item>
+        <item name="android:gravity">center</item>
+    </style>
+</resources>

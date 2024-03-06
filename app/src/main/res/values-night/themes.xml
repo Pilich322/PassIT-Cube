@@ -1,0 +1,14 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.ItCubePass" parent="Theme.Material3.DayNight.NoActionBar">
+
+            <item name="colorPrimary">@color/blue_500</item>
+            <item name="colorPrimaryVariant">@color/blue_700</item>
+
+            <item name="colorOnPrimary">@color/white</item>
+            <item name="colorSecondary">@color/blue_200</item>
+            <item name="colorSecondaryVariant">@color/blue_700</item>
+            <item name="colorOnSecondary">@color/black</item>
+        </style>
+        <style name="Theme.ItCubePass" parent="Base.Theme.ItCubePass" />
+</resources>
