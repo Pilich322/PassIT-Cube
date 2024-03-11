@@ -38,6 +38,7 @@ public class MainFragment extends Fragment {
         BottomSheetBehavior.from(binding.bottomSheet);
         dbManager = new DBManager(getContext());
         dbManager.openDb();
+        dbManager.insertStudent(new Student("Test","Test","Test","Test","Test","Test","Test"));
         binding.buttonCheck.setOnClickListener(v -> {
             String login = binding.editTextLogin.getText().toString();
             String password = binding.editTextPassword.getText().toString();

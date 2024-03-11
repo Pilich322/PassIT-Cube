@@ -20,12 +20,12 @@ public class SplashScreenActivity extends AppCompatActivity {
         setContentView(R.layout.activity_splash_screen);
         new Handler().postDelayed(() -> {
             Intent intent = new Intent(SplashScreenActivity.this, MainActivity.class);
-            DBManager dbManager = new DBManager(this);
-            dbManager.openDb();
-            if(dbManager.checkStudent()){
-                Student student = dbManager.getStudent();
-                intent.putExtra(Student.class.getName(),student);
-            }
+//            DBManager dbManager = new DBManager(this);
+//            dbManager.openDb();
+//            if(dbManager.checkStudent()){
+//                Student student = dbManager.getStudent();
+//                intent.putExtra(Student.class.getName(),student);
+//            }
                 startActivity(intent);
             finish();
         }, 1000);
