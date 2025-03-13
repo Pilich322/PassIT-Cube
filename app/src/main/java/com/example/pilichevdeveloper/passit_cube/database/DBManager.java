@@ -57,8 +57,9 @@ public class DBManager {
 
     }
     @SuppressLint("Range")
-    public Student getStudent() {
-        @SuppressLint("Recycle") Cursor cursor = db.rawQuery("Select * From " + DBConst.STUDENTS_TABLE_NAME, null);
+    public Student getStudent(String login, String password) {
+        @SuppressLint("Recycle") Cursor cursor = db.rawQuery("Select * From " + DBConst.STUDENTS_TABLE_NAME + " Where "
+                + DBConst.STUDENT_LOGIN + " =  + '"+login+"'" + " and " + DBConst.STUDENT_PASSWORD + " = '"+password+"'", null);
         if (cursor.getCount() > 0)
             while (cursor.moveToFirst()) {
                 Student student = new Student();
